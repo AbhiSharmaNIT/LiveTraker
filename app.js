@@ -27,14 +27,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-
-server.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+const PORT = 8000;
+server.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
-echo "# LiveTraker" >> README.md
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/AbhiSharmaNIT/LiveTraker.git
-git push -u origin main
